@@ -11,14 +11,15 @@ console.log(sum)
 
 if (userAge <= 17){
     sum = Math.floor(sum * 20 / 100);
-    sum = sum.toFixed(2);
+    
     console.log('hai ricevuto uno sconto del 20%' + '' + sum )
     
 }else if ( userAge >= 17) {
     sum = Math.floor(sum * 40 / 100);
-    sum = sum.toFixed(2);
+  ;
     console.log('hai ricevuto uno sconto del 40%' + '' + sum)
 }
+sum = sum.toFixed(2);
 
 
 const paragraph = document.getElementById('message')
