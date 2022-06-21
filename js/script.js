@@ -7,22 +7,23 @@ console.log(userAge)
 
 let sum = userChosenDistance * 0.21 ;
 sum = sum.toFixed(2);
-console.log(sum)
+console.log(sum);
+
+    const paragraph = document.getElementById('message');
 
 if (userAge <= 17){
-    sum = Math.floor(sum - (sum * 20 / 100));
-    
-    console.log('hai ricevuto uno sconto del 20%' + '' + sum )
+    sum = sum - (sum * 20 / 100);
+    sum = sum.toFixed(2);
+    paragraph .innerText = `Il costo del tuo biglietto e di: ${sum} ${'Hai ricevuto uno sconto del 20%'} `;
+    console.log(paragraph);
+    console.log('hai ricevuto uno sconto del 20%' + '' + sum );
     
 }else if ( userAge >= 18) {
-    sum = Math.floor (sum - (sum * 40 / 100));
-  
-    console.log('hai ricevuto uno sconto del 40%' + '' + sum)
+    sum = sum - (sum * 40 / 100);
+    sum = sum.toFixed(2);
+    paragraph .innerText = `Il costo del tuo biglietto e di: ${sum} ${'.Hai ricevuto uno sconto del 40%'} `;
+    console.log(paragraph);
+    console.log('hai ricevuto uno sconto del 40%' + '' + sum);
 }
-sum = sum.toFixed(2);
 
 
-const paragraph = document.getElementById('message')
-
-paragraph .innerText = `Il costo del tuo biglietto e di: ${sum}  `
-console.log(paragraph)
