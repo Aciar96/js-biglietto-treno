@@ -10,13 +10,13 @@ sum = sum.toFixed(2);
 console.log(sum)
 
 if (userAge <= 17){
-    sum = Math.floor(sum * 20 / 100);
+    sum = Math.floor(sum - (sum * 20 / 100));
     
     console.log('hai ricevuto uno sconto del 20%' + '' + sum )
     
-}else if ( userAge >= 17) {
-    sum = Math.floor(sum * 40 / 100);
-  ;
+}else if ( userAge >= 18) {
+    sum = Math.floor (sum - (sum * 40 / 100));
+  
     console.log('hai ricevuto uno sconto del 40%' + '' + sum)
 }
 sum = sum.toFixed(2);
